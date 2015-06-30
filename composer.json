@@ -1,0 +1,48 @@
+{
+  "name": "jshmrtn/rokket",
+  "type": "project",
+  "license": "MIT",
+  "description": "Full fledged modern Wordpress stack.",
+  "homepage": "https://github.com/jshmrtn/rokket/",
+  "authors": [
+    {
+      "name": "Jeremy J. Zahner",
+      "email": "zahner@joshmartin.ch",
+      "homepage": "https://github.com/jeremyzahner"
+    }
+  ],
+  "keywords": [
+    "rokket", "joshmartin", "jshmrtn", "capistrano", "wp-cli", "wordpress", "stack", "composer", "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/jshmrtn/rokket/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "composer/installers": "~1.0.12",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.2.2",
+    "wpackagist-plugin/postmark-approved-wordpress-plugin": "1.6",
+    "wpackagist-plugin/post-duplicator": "2.5",
+    "wpackagist-plugin/ajax-thumbnail-rebuild": "1.12",
+    "wpackagist-plugin/simple-page-ordering": "2.2.4",
+    "wpackagist-plugin/simple-custom-post-order": "2.3"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  }
+}
