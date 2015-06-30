@@ -1,17 +1,10 @@
 sudo: false
-
 language: php
 php:
   - nightly
   - 5.6
   - 5.5
   - 5.4
-
-cache: bundler
-rvm:
-  - 2.0.0
-gemfile:
-  - Gemfile
 
 matrix:
   allow_failures:
