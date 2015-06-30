@@ -2,13 +2,14 @@
 [![Build Status](https://travis-ci.org/jshmrtn/rokket.svg)](https://travis-ci.org/jshmrtn/rokket)
 
 ## Roadmap
-- Documentation for deployment.
-- Easy integration of themes.
-- Integration of theme build processes in deployment.
+* Documentation for deployment.
+* Easy integration of themes.
+* Integration of theme build processes in deployment.
 
 ## Requirements
 
 * PHP >= 5.4
+* Ruby >= 1.9
 
 ## Installation
 
