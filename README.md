@@ -1,7 +1,7 @@
 # Rokket
 [![Build Status](https://travis-ci.org/jshmrtn/rokket.svg)](https://travis-ci.org/jshmrtn/rokket)
 
-# Roadmap
+## Roadmap
 - Documentation for deployment.
 - Easy integration of themes.
 - Integration of theme build processes in deployment.
