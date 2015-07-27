@@ -1,13 +1,7 @@
 set :stage, :production
 
-# Change the :deploy_to variable for setting the deployment path
-# ==============================================================
-set :deploy_to, "/var/www/#{fetch(:application)}_production"
-
 # Pulling ENV variables for wp-cli deployments.
 # ==============================================================
-set :wpcli_local_url, ENV['DEVELOPMENT_URL']
-set :wpcli_local_uploads_dir, ENV['DEVELOPMENT_UPLOADS_PATH']
 set :wpcli_remote_url, ENV['PRODUCTION_URL']
 set :wpcli_remote_uploads_dir, ENV['PRODUCTION_UPLOADS_PATH']
 
