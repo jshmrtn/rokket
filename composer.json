@@ -24,6 +24,18 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.2.8",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=LICENSE_KEY"
+        }
+      }
     }
   ],
   "require": {
@@ -35,7 +47,8 @@
     "wpackagist-plugin/post-duplicator": "2.5",
     "wpackagist-plugin/ajax-thumbnail-rebuild": "1.12",
     "wpackagist-plugin/simple-page-ordering": "2.2.4",
-    "wpackagist-plugin/simple-custom-post-order": "2.3"
+    "wpackagist-plugin/simple-custom-post-order": "2.3",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.2"
   },
   "extra": {
     "installer-paths": {
