@@ -72,11 +72,12 @@ allow from all
   AddEncoding gzip                            .svgz
 
   # Webfonts
-  AddType application/vnd.ms-fontobject	      .eot
-  AddType application/x-font-opentype  	      .otf
-  AddType image/svg+xml                	      .svg
-  AddType application/x-font-ttf       	      .ttf
-  AddType application/font-woff        	      .woff
+  AddType application/vnd.ms-fontobject       .eot
+  AddType application/x-font-opentype         .otf
+  AddType image/svg+xml                       .svg
+  AddType application/x-font-ttf              .ttf
+  AddType application/font-woff               .woff
+  AddType application/font-woff2              .woff2
 
   # Assorted types
   AddType application/octet-stream            .safariextz
@@ -182,6 +183,8 @@ allow from all
   ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
   ExpiresByType application/x-font-ttf    "access plus 1 month"
   ExpiresByType application/x-font-woff   "access plus 1 month"
+  ExpiresByType application/font-woff     "access plus 1 month"
+  ExpiresByType application/font-woff2    "access plus 1 month"
   ExpiresByType font/opentype             "access plus 1 month"
   ExpiresByType image/svg+xml             "access plus 1 month"
 
@@ -297,11 +300,12 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.php$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.php [L]
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
 </IfModule>
+
 # END WordPress

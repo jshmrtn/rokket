@@ -38,6 +38,12 @@ define('WP_CONTENT_DIR', $webroot_dir . CONTENT_DIR);
 define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR);
 
 /**
+ * Caching
+ */
+define('WP_CACHE', getenv('WP_CACHE') ?: true);
+define('WPCACHEHOME', WP_CONTENT_DIR . '/plugins/wp-super-cache/');
+
+/**
  * DB settings
  */
 define('DB_NAME', getenv('DB_NAME'));

@@ -10,6 +10,10 @@ web/app/uploads/*
 !web/app/mu-plugins/register-theme-directory.php
 !web/app/mu-plugins/bedrock-autoloader.php
 
+# WP Super Cache
+web/app/cache/*
+!web/app/cache/.gitkeep
+
 # WordPress
 web/wp
 !web/.htaccess
