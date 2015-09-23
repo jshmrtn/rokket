@@ -16,7 +16,7 @@ Dotenv.load
 require 'capistrano/deploytags'
 
 # WP-CLI for deployment
-require 'capistrano/wp-cli'
+require 'capistrano/wpcli'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 # Customize this path to change the location of your custom tasks.
