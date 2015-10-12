@@ -1,6 +1,9 @@
 # Rokket
 [![Build Status](https://travis-ci.org/jshmrtn/rokket.svg)](https://travis-ci.org/jshmrtn/rokket)
-[![Dependency Status](https://www.versioneye.com/user/projects/561b7b5ea193340f280012df/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561b7b5ea193340f280012df)
+
+Composer: [![Dependency Status](https://www.versioneye.com/user/projects/561b7b5ea193340f280012df/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561b7b5ea193340f280012df)
+
+Rubygems: [![Dependency Status](https://www.versioneye.com/user/projects/561b7b5ba193340f2f0013f1/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561b7b5ba193340f2f0013f1)
 
 ## Roadmap
 * Documentation for deployment.
