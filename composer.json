@@ -3,6 +3,7 @@
   "type": "project",
   "license": "MIT",
   "description": "Full fledged modern Wordpress stack.",
+  "version": "1.0.0",
   "homepage": "https://github.com/jshmrtn/rokket/",
   "authors": [
     {
