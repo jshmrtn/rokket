@@ -1,5 +1,6 @@
 # Rokket
 [![Build Status](https://travis-ci.org/jshmrtn/rokket.svg)](https://travis-ci.org/jshmrtn/rokket)
+[![Dependency Status](https://www.versioneye.com/user/projects/561b7b5ea193340f280012df/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561b7b5ea193340f280012df)
 
 ## Roadmap
 * Documentation for deployment.
