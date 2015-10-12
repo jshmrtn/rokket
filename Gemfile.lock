@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:lavmeiker/capistrano-wpcli.git
+  revision: 96e507662e3aa1891a58f73d1b744b8c915887b0
+  specs:
+    capistrano-wpcli (0.1.0)
+      capistrano (>= 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -29,8 +36,6 @@ GEM
       capistrano (>= 3.0.0.pre)
     capistrano-deploytags (1.0.3)
       capistrano (>= 3.2.0)
-    capistrano-wpcli (0.0.9)
-      capistrano (>= 3.0)
     colorize (0.7.7)
     dotenv (2.0.2)
     dotenv-rails (2.0.2)
@@ -81,5 +86,5 @@ DEPENDENCIES
   capistrano (~> 3.2.0)
   capistrano-composer
   capistrano-deploytags (~> 1.0.0)
-  capistrano-wpcli
+  capistrano-wpcli!
   dotenv-rails

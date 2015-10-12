@@ -20,10 +20,6 @@ set :theme_path, Pathname.new('web/app/themes/').join(ENV['THEME_NAME'])
 set :local_app_path, Pathname.new(File.dirname(__FILE__)).join('../')
 set :local_theme_path, fetch(:local_app_path).join(fetch(:theme_path))
 
-SSHKit.config.command_map[:composer] = "php #{shared_path}/composer.phar"
-
-SSHKit.config.command_map[:wp] = "$(if [ $(which wp) ]; then echo 'wp'; else echo 'php #{wpcli_phar}'; fi)"
-
 namespace :assets do
   task :compile do
     run_locally do
