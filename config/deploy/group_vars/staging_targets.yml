@@ -1,0 +1,6 @@
+---
+
+ansistrano_deploy_to: "/var/www/yoursite" # Base path to deploy to.
+
+rokket_remote_url: staging.example.com # The application url on the remote stage
+rokket_remote_project_root: "{{ansistrano_deploy_to}}/current" # Leave as is, unless you know what you are doing!

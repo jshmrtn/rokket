@@ -1,0 +1,8 @@
+[webserver]
+YOUR_PRODUCTION_IP_OR_HOSTNAME
+
+[webserver:children]
+production_targets
+
+[production_targets]
+YOUR_PRODUCTION_IP_OR_HOSTNAME

@@ -1,3 +1,6 @@
+# Deployment
+config/deploy/vars/deployment_vars_local.yml
+
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
@@ -13,6 +16,7 @@ web/app/uploads/*
 # WP Super Cache
 web/app/cache/*
 !web/app/cache/.gitkeep
+!web/app/cache/cache-enabler/.gitkeep
 
 # WordPress
 web/wp
@@ -28,16 +32,13 @@ sql-dump-*.sql
 !.env.example
 !.env.dev.example
 
-# Vendor (e.g. Composer)
-vendor/*
-!vendor/.gitkeep
-
 # Node Package Manager
 node_modules
 
 # Vagrant
 bin
 .vagrant
+.otto
 
 # Numerous always-ignore extensions
 *.diff

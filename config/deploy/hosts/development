@@ -1,0 +1,8 @@
+[webserver]
+YOUR_DEVELOPMENT_IP_OR_HOSTNAME
+
+[webserver:children]
+development_targets
+
+[development_targets]
+YOUR_DEVELOPMENT_IP_OR_HOSTNAME

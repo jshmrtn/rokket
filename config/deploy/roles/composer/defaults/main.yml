@@ -1,0 +1,2 @@
+rokket_composer_source_url: https://getcomposer.org/composer.phar
+rokket_composer_dest: /usr/bin/composer

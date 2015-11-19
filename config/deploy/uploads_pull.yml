@@ -1,0 +1,11 @@
+---
+
+- name: Pull remote uploads to local
+  sudo: no
+  user: "{{ deployment_user }}"
+  hosts: webserver
+  vars_files:
+    - vars/deployment_vars.yml
+    - vars/deployment_vars_local.yml
+  tasks:
+    - include: tasks/uploads-pull.yml

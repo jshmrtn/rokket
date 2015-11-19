@@ -3,20 +3,20 @@
   "type": "project",
   "license": "MIT",
   "description": "Full fledged modern Wordpress stack.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "homepage": "https://github.com/jshmrtn/rokket/",
   "authors": [
     {
       "name": "Jeremy J. Zahner",
       "email": "zahner@joshmartin.ch",
-      "homepage": "https://github.com/jeremyzahner"
+      "homepage": "https://github.com/jeremyzahner/"
     }
   ],
   "keywords": [
-    "rokket", "joshmartin", "jshmrtn", "capistrano", "wp-cli", "wordpress", "stack", "composer", "wp"
+    "rokket", "joshmartin", "jshmrtn", "ansible", "wp-cli", "wordpress", "stack", "composer", "wp"
   ],
   "support": {
-    "issues": "https://github.com/jshmrtn/rokket/issues"
+    "issues": "https://github.com/jshmrtn/rokket/issues/"
   },
   "config": {
     "preferred-install": "dist"
@@ -24,34 +24,21 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.3.0",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-          "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=LICENSE_KEY"
-        }
-      }
+      "url": "https://wpackagist.org"
     }
   ],
   "require": {
     "php": ">=5.4",
-    "composer/installers": "~1.0.12",
-    "vlucas/phpdotenv": "^2.0.1",
+    "composer/installers": "1.0.12",
+    "vlucas/phpdotenv": "2.0.1",
     "johnpbloch/wordpress": "4.3.1",
     "wpackagist-plugin/postmark-approved-wordpress-plugin": "1.7",
     "wpackagist-plugin/post-duplicator": "2.8",
     "wpackagist-plugin/ajax-thumbnail-rebuild": "1.12",
     "wpackagist-plugin/simple-page-ordering": "2.2.4",
     "wpackagist-plugin/simple-custom-post-order": "2.3",
-    "advanced-custom-fields/advanced-custom-fields-pro": "^5.2",
-    "wpackagist-plugin/wp-super-cache": "1.4.4",
-    "roots/soil": "3.5.0"
+    "wpackagist-plugin/cache-enabler": "1.0.7",
+    "roots/soil": "3.6.0"
   },
   "extra": {
     "installer-paths": {

@@ -1,0 +1,8 @@
+[webserver]
+YOUR_STAGING_IP_OR_HOSTNAME
+
+[webserver:children]
+staging_targets
+
+[staging_targets]
+YOUR_STAGING_IP_OR_HOSTNAME
