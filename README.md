@@ -4,10 +4,7 @@
 [![Dependency Status](https://www.versioneye.com/user/projects/561b7b5ea193340f280012df/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561b7b5ea193340f280012df) (Composer)
 
 ## Roadmap
-* Adding functionality to uploads push/pull command.
-* Migration to Otto for local development.
-* Easy integration of themes.
-* Integration of theme build processes in deployment.
+* Removing all deployment functionality
 
 ## Requirements
 
@@ -43,4 +40,4 @@ Contributions are welcome from everyone. We will add [contributing guidelines](C
 
 ## Credits
 
-This project started as a fork of the faboulus [roots/bedrock](https://github.com/roots/bedrock).
+This project was inspired by the faboulus [roots/bedrock](https://github.com/roots/bedrock).
