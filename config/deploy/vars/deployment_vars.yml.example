@@ -1,8 +1,0 @@
----
-
-rokket_shared_files: ['.env']
-rokket_shared_dirs: ['web/app/uploads', 'web/app/cache']
-
-ansistrano_git_repo: 'git@git.yourdomain.ch:yournamespace/yourproject.git' 
-ansistrano_git_branch: 'master'
-ansistrano_shared_paths: ['web/app/uploads', 'web/app/cache', '.env']

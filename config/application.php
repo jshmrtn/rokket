@@ -40,7 +40,7 @@ define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR);
 /**
  * Caching
  */
-define('WP_CACHE', getenv('WP_CACHE') ?: true);
+define('WP_CACHE', getenv('WP_CACHE') ?: false);
 
 /**
  * DB settings

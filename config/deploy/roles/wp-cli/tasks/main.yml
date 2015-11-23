@@ -1,7 +1,0 @@
----
-
-- name: Install WP-CLI
-  get_url:
-    url="{{ rokket_wpcli_source_url }}"
-    dest="{{ rokket_wpcli_dest }}"
-    mode=0755

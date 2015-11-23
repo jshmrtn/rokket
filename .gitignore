@@ -1,3 +1,9 @@
+# Vendor
+vendor
+
+# Languages
+web/app/languages/
+
 # Deployment
 config/deploy/vars/deployment_vars_local.yml
 

@@ -1,44 +1,31 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "70ecf13d9c00d2ab7f763d05e7de73ad",
-    "content-hash": "695272d5028126c469c8bf3d6d91fd88",
+    "hash": "0f7d31b3e9f7ab2ad2b5e3e77d547152",
     "packages": [
         {
-            "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.3.0",
-            "dist": {
-                "type": "zip",
-                "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=LICENSE_KEY",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "wordpress-plugin"
-        },
-        {
             "name": "composer/installers",
-            "version": "v1.0.21",
+            "version": "v1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+                "reference": "4127333b03e8b4c08d081958548aae5419d1a2fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "url": "https://api.github.com/repos/composer/installers/zipball/4127333b03e8b4c08d081958548aae5419d1a2fa",
+                "reference": "4127333b03e8b4c08d081958548aae5419d1a2fa",
                 "shasum": ""
             },
             "replace": {
-                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "4.1.*"
+                "phpunit/phpunit": "3.7.*"
             },
             "type": "composer-installer",
             "extra": {
@@ -60,34 +47,27 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama"
+                    "homepage": "https://github.com/shama",
+                    "role": "Developer"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
                 "Craft",
-                "Dolibarr",
                 "Hurad",
                 "MODX Evo",
                 "OXID",
-                "SMF",
-                "Thelia",
                 "WolfCMS",
                 "agl",
-                "aimeos",
                 "annotatecms",
-                "bitrix",
                 "cakephp",
-                "chef",
                 "codeigniter",
                 "concrete5",
                 "croogo",
-                "dokuwiki",
                 "drupal",
                 "elgg",
                 "fuelphp",
-                "grav",
                 "installer",
                 "joomla",
                 "kohana",
@@ -97,12 +77,9 @@
                 "mako",
                 "mediawiki",
                 "modulework",
-                "moodle",
                 "phpbb",
                 "piwik",
                 "ppi",
-                "puppet",
-                "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
@@ -111,7 +88,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-02-18 17:17:01"
+            "time": "2014-02-24 04:21:34"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -200,16 +177,16 @@
         },
         {
             "name": "roots/soil",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0"
+                "reference": "c9e224facb851011284c3ea925980d988473fb3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0",
-                "reference": "4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0",
+                "url": "https://api.github.com/repos/roots/soil/zipball/c9e224facb851011284c3ea925980d988473fb3f",
+                "reference": "c9e224facb851011284c3ea925980d988473fb3f",
                 "shasum": ""
             },
             "require": {
@@ -238,7 +215,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-09-24 17:30:00"
+            "time": "2015-11-19 04:59:49"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -307,8 +284,28 @@
             "homepage": "https://wordpress.org/plugins/ajax-thumbnail-rebuild/"
         },
         {
+            "name": "wpackagist-plugin/cache-enabler",
+            "version": "1.0.7",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/cache-enabler/",
+                "reference": "tags/1.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cache-enabler.1.0.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cache-enabler/"
+        },
+        {
             "name": "wpackagist-plugin/post-duplicator",
-            "version": "2.8",
+            "version": "2.12",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/post-duplicator/",
@@ -385,26 +382,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/simple-page-ordering/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.4.4",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.4.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.4.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-super-cache/"
         }
     ],
     "packages-dev": [],

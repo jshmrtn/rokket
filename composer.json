@@ -24,7 +24,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "https://wpackagist.org"
+      "url": "http://wpackagist.org"
     }
   ],
   "require": {
@@ -33,7 +33,7 @@
     "vlucas/phpdotenv": "2.0.1",
     "johnpbloch/wordpress": "4.3.1",
     "wpackagist-plugin/postmark-approved-wordpress-plugin": "1.7",
-    "wpackagist-plugin/post-duplicator": "2.8",
+    "wpackagist-plugin/post-duplicator": "2.12",
     "wpackagist-plugin/ajax-thumbnail-rebuild": "1.12",
     "wpackagist-plugin/simple-page-ordering": "2.2.4",
     "wpackagist-plugin/simple-custom-post-order": "2.3",
