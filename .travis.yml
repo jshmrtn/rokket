@@ -23,4 +23,4 @@ install:
   - composer install
 
 script:
-  - phpcs --standard=ruleset.xml --extensions=php --ignore=web/wp/,vendor/ -n -s .
+  - phpcs --standard=ruleset.xml --extensions=php --ignore=web/wp/,vendor/,web/app/plugins,web/app/mu-plugins -n -s .
