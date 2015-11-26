@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "339b3415648cdc84192328e08447ad4e",
-    "content-hash": "9be1117cad4d8778a1c97bf6b48ba73a",
+    "hash": "d67bf43a23a43b6e5dabf637c21eb948",
+    "content-hash": "1ec3ef42789aae3f81b8c9e1e1fd88f3",
     "packages": [
         {
             "name": "composer/installers",
@@ -191,48 +191,6 @@
             "time": "2015-06-11 15:15:30"
         },
         {
-            "name": "roots/soil",
-            "version": "3.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/roots/soil.git",
-                "reference": "c9e224facb851011284c3ea925980d988473fb3f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/c9e224facb851011284c3ea925980d988473fb3f",
-                "reference": "c9e224facb851011284c3ea925980d988473fb3f",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "php": ">=5.4.0"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Scott Walkinshaw",
-                    "email": "scott.walkinshaw@gmail.com",
-                    "homepage": "https://github.com/swalkinshaw"
-                },
-                {
-                    "name": "Ben Word",
-                    "email": "ben@benword.com",
-                    "homepage": "https://github.com/retlehs"
-                }
-            ],
-            "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
-            "homepage": "https://roots.io/plugins/soil/",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2015-11-19 04:59:49"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "v2.1.0",
             "source": {
@@ -284,16 +242,16 @@
             "time": "2015-10-28 18:53:35"
         },
         {
-            "name": "wpackagist-plugin/ajax-thumbnail-rebuild",
-            "version": "1.12",
+            "name": "wpackagist-plugin/debug-bar",
+            "version": "0.8.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/ajax-thumbnail-rebuild/",
-                "reference": "tags/1.12"
+                "url": "http://plugins.svn.wordpress.org/debug-bar/",
+                "reference": "tags/0.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ajax-thumbnail-rebuild.1.12.zip",
+                "url": "https://downloads.wordpress.org/plugin/debug-bar.0.8.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -301,107 +259,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/ajax-thumbnail-rebuild/"
-        },
-        {
-            "name": "wpackagist-plugin/cache-enabler",
-            "version": "1.0.7",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/cache-enabler/",
-                "reference": "tags/1.0.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cache-enabler.1.0.7.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/cache-enabler/"
-        },
-        {
-            "name": "wpackagist-plugin/post-duplicator",
-            "version": "2.12",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/post-duplicator/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/post-duplicator.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/post-duplicator/"
-        },
-        {
-            "name": "wpackagist-plugin/postmark-approved-wordpress-plugin",
-            "version": "1.7",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/postmark-approved-wordpress-plugin/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/postmark-approved-wordpress-plugin.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/postmark-approved-wordpress-plugin/"
-        },
-        {
-            "name": "wpackagist-plugin/simple-custom-post-order",
-            "version": "2.3",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/simple-custom-post-order/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-custom-post-order.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-custom-post-order/"
-        },
-        {
-            "name": "wpackagist-plugin/simple-page-ordering",
-            "version": "2.2.4",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/simple-page-ordering/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-page-ordering.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-page-ordering/"
+            "homepage": "https://wordpress.org/plugins/debug-bar/"
         }
     ],
     "packages-dev": [],

@@ -3,7 +3,7 @@
   "type": "project",
   "license": "MIT",
   "description": "Full fledged modern Wordpress stack.",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "homepage": "https://github.com/jshmrtn/rokket/",
   "authors": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "keywords": [
-    "rokket", "joshmartin", "jshmrtn", "ansible", "wp-cli", "wordpress", "stack", "composer", "wp"
+    "rokket", "joshmartin", "jshmrtn", "wordpress", "stack", "composer", "travis-ci", "wp"
   ],
   "support": {
     "issues": "https://github.com/jshmrtn/rokket/issues/"
@@ -32,13 +32,7 @@
     "composer/installers": "1.0.22",
     "vlucas/phpdotenv": "2.1.0",
     "johnpbloch/wordpress": "4.3.1",
-    "wpackagist-plugin/postmark-approved-wordpress-plugin": "1.7",
-    "wpackagist-plugin/post-duplicator": "2.12",
-    "wpackagist-plugin/ajax-thumbnail-rebuild": "1.12",
-    "wpackagist-plugin/simple-page-ordering": "2.2.4",
-    "wpackagist-plugin/simple-custom-post-order": "2.3",
-    "wpackagist-plugin/cache-enabler": "1.0.7",
-    "roots/soil": "3.6.0"
+    "wpackagist-plugin/debug-bar": "0.8.2"
   },
   "extra": {
     "installer-paths": {
