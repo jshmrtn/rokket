@@ -1,3 +1,6 @@
+### 2.0.7: Translations
+* Added koodimoni's plugin and repo (see http://languages.koodimonni.fi) for installing language files.
+
 ### 2.0.6: Plugin Updates
 * Removed all plugins (except debug bar), to make stack more generic.
 

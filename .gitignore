@@ -3,9 +3,9 @@ vendor
 
 # Languages
 web/app/languages/
-
-# Deployment
-config/deploy/vars/deployment_vars_local.yml
+!web/app/languages/.gitkeep
+!web/app/languages/themes/.gitkeep
+!web/app/languages/plugins/.gitkeep
 
 # Application
 web/app/plugins/*
@@ -19,7 +19,7 @@ web/app/uploads/*
 !web/app/mu-plugins/register-theme-directory.php
 !web/app/mu-plugins/bedrock-autoloader.php
 
-# WP Super Cache
+# WP Cache
 web/app/cache/*
 !web/app/cache/.gitkeep
 !web/app/cache/cache-enabler/.gitkeep

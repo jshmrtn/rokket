@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d67bf43a23a43b6e5dabf637c21eb948",
-    "content-hash": "1ec3ef42789aae3f81b8c9e1e1fd88f3",
+    "hash": "3e19250654735dfa3d9141577e459aab",
+    "content-hash": "150b3eb68f42f72c1a6eaa94797350a4",
     "packages": [
         {
             "name": "composer/installers",
@@ -189,6 +189,45 @@
                 "wordpress"
             ],
             "time": "2015-06-11 15:15:30"
+        },
+        {
+            "name": "koodimonni/composer-dropin-installer",
+            "version": "0.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Koodimonni/Composer-Dropin-Installer.git",
+                "reference": "618b96fd3bc8c1532610b7f7baedc4e60736a340"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Koodimonni/Composer-Dropin-Installer/zipball/618b96fd3bc8c1532610b7f7baedc4e60736a340",
+                "reference": "618b96fd3bc8c1532610b7f7baedc4e60736a340",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Koodimonni\\Composer\\Dropin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Koodimonni\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Onni Hakala",
+                    "email": "onni@koodimonni.fi"
+                }
+            ],
+            "description": "Do what the fuck you want with your composer packages aka. Composer Dropin installer. Install packages or part of packages into custom paths without overwriting existing stuff.",
+            "time": "2015-01-04 10:24:12"
         },
         {
             "name": "vlucas/phpdotenv",
