@@ -1,0 +1,78 @@
+# Before Script
+before_script:
+  - cp .env.example .env
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerinit ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+# Select what we should cache
+cache:
+  untracked: true
+  paths:
+  - vendor/
+  - node_modules/
+
+stages:
+  - build
+  - test
+  - deploy
+
+# PHP 5.4
+site:php:5.4-apache:
+  stage: build
+  tags:
+    - docker
+  image: php:5.4-apache
+  script:
+    - apt-get update -yqq
+    - apt-get install git -yqq
+    - apt-get install zlib1g-dev -yqq
+    - docker-php-ext-install zip
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar self-update
+    - php composer.phar install --prefer-dist > /dev/null
+
+# PHP 5.5
+site:php:5.5-apache:
+  stage: build
+  tags:
+    - docker
+  image: php:5.5-apache
+  script:
+    - apt-get update -yqq
+    - apt-get install git -yqq
+    - apt-get install zlib1g-dev -yqq
+    - docker-php-ext-install zip
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar self-update
+    - php composer.phar install --prefer-dist > /dev/null
+
+# PHP 5.6
+site:php:5.6-apache:
+  stage: build
+  tags:
+    - docker
+  image: php:5.6-apache
+  script:
+    - apt-get update -yqq
+    - apt-get install git -yqq
+    - apt-get install zlib1g-dev -yqq
+    - docker-php-ext-install zip
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar self-update
+    - php composer.phar install --prefer-dist > /dev/null
+
+# NodeJS
+theme:nodejs:0.12.10:
+  stage: build
+  tags:
+    - docker
+  image: node:0.12.10
+  script:
+    - cd web/app/themes/$THEME_NAME
+    - npm install
+    - node_modules/.bin/bower install -s --allow-root
+    - node_modules/.bin/gulp build
+    - node_modules/.bin/gulp build --production

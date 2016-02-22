@@ -1,3 +1,7 @@
+### 2.1.0: Translations
+* Changed CI-Config from Travis to Gitlab.
+* Updated Composer Dependencies
+
 ### 2.0.7: Translations
 * Added koodimoni's plugin and repo (see http://languages.koodimonni.fi) for installing language files.
 
