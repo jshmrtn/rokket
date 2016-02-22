@@ -1,6 +1,4 @@
 # Rokket
-[![Build Status](https://travis-ci.org/jshmrtn/rokket.svg)](https://travis-ci.org/jshmrtn/rokket) (PHP)
-
 [![Dependency Status](https://www.versioneye.com/user/projects/561b7b5ea193340f280012df/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561b7b5ea193340f280012df) (Composer)
 
 ## Roadmap
@@ -9,6 +7,7 @@
 ## Requirements
 
 * PHP >= 5.4
+* Gitlab-CI (Optional - For CI purposes only)
 
 ## Installation
 
