@@ -1,15 +1,4 @@
 # ----------------------------------------------------------------------
-# DENY/ALLOW USER BY IP
-# ----------------------------------------------------------------------
-<Limit GET POST>
-order deny,allow
-deny from all
-allow from localhost
-allow from 127.0.0.1
-allow from all
-</Limit>
-
-# ----------------------------------------------------------------------
 # IE Compat-Mode Force OFF
 # ----------------------------------------------------------------------
 
@@ -297,6 +286,47 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 # ----------------------------------------------------------------------
 # REWRITE SETTINGS
 # ----------------------------------------------------------------------
+
+# Start Cache Enabler
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+
+ <IfModule mod_mime.c>
+ # webp HTML file
+ RewriteCond %{REQUEST_URI} /$
+ RewriteCond %{REQUEST_URI} !^/wp-admin/.*
+ RewriteCond %{REQUEST_METHOD} !=POST
+ RewriteCond %{QUERY_STRING} =""
+ RewriteCond %{HTTP_COOKIE} !(wp-postpass|wordpress_logged_in|comment_author)_
+ RewriteCond %{HTTP:Accept-Encoding} gzip
+ RewriteCond %{HTTP:Accept} image/webp
+ RewriteCond %{DOCUMENT_ROOT}/app/cache/cache-enabler/%{HTTP_HOST}%{REQUEST_URI}index-webp.html.gz -f
+ RewriteRule ^(.*) /app/cache/cache-enabler/%{HTTP_HOST}%{REQUEST_URI}index-webp.html.gz [L]
+
+ # gzip HTML file
+ RewriteCond %{REQUEST_URI} /$
+ RewriteCond %{REQUEST_URI} !^/wp-admin/.*
+ RewriteCond %{REQUEST_METHOD} !=POST
+ RewriteCond %{QUERY_STRING} =""
+ RewriteCond %{HTTP_COOKIE} !(wp-postpass|wordpress_logged_in|comment_author)_
+ RewriteCond %{HTTP:Accept-Encoding} gzip
+ RewriteCond %{DOCUMENT_ROOT}/app/cache/cache-enabler/%{HTTP_HOST}%{REQUEST_URI}index.html.gz -f
+ RewriteRule ^(.*) /app/cache/cache-enabler/%{HTTP_HOST}%{REQUEST_URI}index.html.gz [L]
+
+ AddType text/html .gz
+ AddEncoding gzip .gz
+ </IfModule>
+
+ # default HTML file
+ RewriteCond %{REQUEST_URI} /$
+ RewriteCond %{REQUEST_URI} !^/wp-admin/.*
+ RewriteCond %{REQUEST_METHOD} !=POST
+ RewriteCond %{QUERY_STRING} =""
+ RewriteCond %{HTTP_COOKIE} !(wp-postpass|wordpress_logged_in|comment_author)_
+ RewriteCond %{DOCUMENT_ROOT}/app/cache/cache-enabler/%{HTTP_HOST}%{REQUEST_URI}index.html -f
+ RewriteRule ^(.*) /app/cache/cache-enabler/%{HTTP_HOST}%{REQUEST_URI}index.html [L]
+</IfModule>
+# End Cache Enabler
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>

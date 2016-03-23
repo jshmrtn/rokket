@@ -1,58 +1,56 @@
 {
-  "name": "jshmrtn/rokket",
-  "type": "project",
-  "license": "MIT",
-  "description": "Full fledged modern Wordpress stack.",
-  "version": "2.1.0",
-  "homepage": "https://github.com/jshmrtn/rokket/",
-  "authors": [
-    {
-      "name": "Jeremy J. Zahner",
-      "email": "zahner@joshmartin.ch",
-      "homepage": "https://github.com/jeremyzahner/"
+    "name": "jshmrtn/rokket",
+    "type": "project",
+    "license": "MIT",
+    "description": "Full fledged modern Wordpress stack.",
+    "version": "2.2.0",
+    "homepage": "https://github.com/jshmrtn/rokket/",
+    "authors": [{
+        "name": "Jeremy J. Zahner",
+        "email": "zahner@joshmartin.ch",
+        "homepage": "https://github.com/jeremyzahner/"
+    }, {
+        "name": "Vedran Zgela",
+        "email": "zgela@joshmartin.ch",
+        "homepage": "https://github.com/vdrnn/"
+    }],
+    "keywords": [
+        "rokket", "joshmartin", "jshmrtn", "wordpress", "stack", "composer", "travis-ci", "wp"
+    ],
+    "support": {
+        "issues": "https://github.com/jshmrtn/rokket/issues/"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "secure-http": false
+    },
+    "repositories": [{
+        "type": "composer",
+        "url": "http://wpackagist.org"
+    }, {
+        "type": "composer",
+        "url": "http://languages.koodimonni.fi"
+    }],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "1.0.22",
+        "vlucas/phpdotenv": "2.1.0",
+        "johnpbloch/wordpress": "4.4.2",
+        "wpackagist-plugin/cache-enabler": "1.0.9",
+        "wpackagist-plugin/optimus": "1.4.5",
+        "wpackagist-plugin/cdn-enabler": "1.0.2"
+    },
+    "extra": {
+        "installer-paths": {
+            "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+            "web/app/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "dropin-paths": {
+            "web/app/languages/": ["type:wordpress-language", "vendor:koodimonni-language"],
+            "web/app/languages/plugins/": ["type:wordpress-plugin-language", "vendor:koodimonni-plugin-language"],
+            "web/app/languages/themes/": ["type:wordpress-theme-language", "vendor:koodimonni-theme-language"]
+        },
+        "wordpress-install-dir": "web/wp"
     }
-  ],
-  "keywords": [
-    "rokket", "joshmartin", "jshmrtn", "wordpress", "stack", "composer", "travis-ci", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/jshmrtn/rokket/issues/"
-  },
-  "config": {
-    "preferred-install": "dist"
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "http://wpackagist.org"
-    },
-    {
-      "type": "composer",
-      "url": "http://languages.koodimonni.fi"
-    }
-  ],
-  "require": {
-    "php": ">=5.4",
-    "composer/installers": "1.0.23",
-    "vlucas/phpdotenv": "2.2.0",
-    "johnpbloch/wordpress": "4.4.2",
-    "koodimonni/composer-dropin-installer": "*",
-    "wpackagist-plugin/debug-bar": "0.8.2"
-  },
-  "extra": {
-    "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
-    },
-    "dropin-paths": {
-      "web/app/languages/": ["type:wordpress-language"],
-      "web/app/languages/plugins/": ["type:wordpress-plugin-language"],
-      "web/app/languages/themes/": ["type:wordpress-theme-language"],
-      "web/app/languages/": ["vendor:koodimonni-language"],
-      "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
-      "web/app/languages/themes/": ["vendor:koodimonni-theme-language"]
-    },
-    "wordpress-install-dir": "web/wp"
-  }
 }
